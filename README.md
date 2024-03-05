@@ -1,1 +1,2 @@
-<h1>Codificador de texto - JavaScript</h1>
+<h1>Codificador - JavaScript</h1>
+
