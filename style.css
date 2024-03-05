@@ -1,0 +1,285 @@
+:root {
+    --cor-primaria: #F3F5FC;
+    --cor-secundaria: #0A3871;
+    --cor-detalhe: #D8DFE8;
+    --cor-mensagem: #343A40;
+    --cor-gray:#495057;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    width: 100vw;
+    height: 100vh;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 5vh;
+    padding: 2% 5% 1% 2%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.container__texto {
+    width: 60vw;
+    height: 71vh;
+    padding: 5% 2% 0 10%;
+}
+
+.container__quadro-wrapper{
+    width: 50vw;
+    height: 60vh;
+}
+
+.container__quadro {
+    background-color: var(--cor-primaria);
+    font-size: 32px;
+    width: 100%;
+    height: 56vh;
+    text-transform: lowercase;
+    border: none;
+}
+
+.container__aviso {
+    font-size: 12px;
+    width: 100%;
+    height: 3vh;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 30px;
+}
+.container__aviso__imagem {
+    width: 1rem;
+}
+
+.container__botao {
+    display: flex;
+    justify-content: space-around;
+    height: 6vh;
+    width: 100%;
+    gap: 5px;
+}
+
+.container__botao__criptografar{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    border-radius: 17px;
+    border: 1px solid;
+    width: 45%;
+    text-transform: uppercase;
+}
+
+.container__botao__descriptografar {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    border-radius: 17px;
+    border: 1px solid;
+    width: 45%;
+    text-transform: uppercase;
+}
+
+.container__texto__resultado {
+    width: 100%;
+    height: 72vh;
+    padding: 0 5%;
+}
+
+.container__resposta-wrapper {
+    position: relative;
+}
+
+
+.container__resposta {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: var(--cor-secundaria);
+    width: 100%;
+    height: 75vh;
+    box-shadow: 0px 24px 32px -8px;
+    font-size: 32px;
+}
+
+.container_boneco {
+    position: absolute;
+    width: 60%;
+    top: 15%; 
+    left: 20%;
+}
+
+.container__resultado__mensagem {
+    position: absolute;
+    top: 70%;
+    font-size: 22px;
+    text-align: center;
+    padding: 0 23% 0;
+    color: var(--cor-mensagem);
+}
+
+.container__resultado__texto {
+    position: absolute;
+    top: 80%;
+    padding: 0 20% 0;
+    text-align: center;
+    color: var(--cor-gray);
+}
+
+.container__botao__copiar {
+    display: none;
+}
+
+.container__botao__copiar {
+    position: absolute;
+    align-items: center;
+    top: 85%;
+    left: 35%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    border-radius: 17px;
+    border: 1px solid;
+    width: 12.5rem;
+    height: 2.8rem;
+}
+
+.rodape {
+    color: var(--cor-gray);
+    height: 3.1rem;
+    text-align: center;
+    padding-top: 10px;
+    gap: 24px;
+}
+
+.ion-icon {
+    font-size: 2rem;
+    color: var(--cor-gray);
+}
+
+@media (max-width: 1200px) {   
+
+    header {
+        padding: 2% 1%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container__texto{
+        width: 90vw; 
+        height: 70vh;
+        padding: 3% 3% 0 3%;
+    }
+
+    .container__quadro-wrapper{
+        width: 90vw; 
+        padding: 0 2% 0 1%;   
+    }
+
+    .container__quadro {
+        width: 100%;
+    }
+
+    .container__resposta {
+        width: 90vw;
+        height: 20rem;
+    }
+
+    .container__aviso {
+        width: 90vw;
+        height: 2rem;
+        padding: 0 5%;
+    }
+
+    .container__botao {
+        width: 100%;
+        height: 3.5rem;
+    }
+
+    .container__texto__resultado{
+        width: 90vw;
+        height: 30%;
+        padding: 0 3% 0 3%;
+    }
+
+    .container__resposta-wrapper{
+        width: 100%;
+        height: 20rem;
+    }
+
+    .container_boneco {
+        display: none;
+    }
+
+    .container__resposta{
+        width: 100%;
+    }
+    .container__resultado__mensagem {
+        width: 90%;
+        padding: 0 3%;
+        font-size: 26px;
+        text-align: center;
+        top: 35%;
+    }
+
+    .container__resultado__texto{
+        width: 90%;
+        padding: 0 3%;
+        font-size: 20px;
+        text-align: center;
+        top: 47%;
+    }
+
+    .rodape{
+        width: 100%;
+        height: 3.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .container__texto {
+        height: 60%;
+        font-size: 16px;
+    }
+
+    .container__aviso {
+        padding: 0 2%;
+    }
+
+    .container__botao {
+        flex-direction: column;
+        height: 8rem;
+    }
+
+    .container__botao__criptografar, .container__botao__descriptografar{
+        width: 100%;
+        height: 40%;
+    }
+
+    .container__texto__resultado {
+        height: 20%;
+    }
+    
+    .container__resultado__mensagem, .container__resultado__texto {
+        font-size: 16px;
+        padding: 0 5%;
+    }
+
+    .container__botao__copiar {
+        left: 25%;
+    }
+}
